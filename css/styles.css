@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Cabeçalho*/
+.cabecalho{
+    background: linear-gradient(90deg, rgba(58,180,132,1) 0%, rgb(0, 255, 187) 50%, rgba(58,180,132,1) 100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-bottom:2px solid #0f6424;
+}
+
+/*Grid de Produtos*/
+.container{
+    background-color: #eee;
+    min-height: 60vh;
+    padding: 50px;
+}
+.products-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    width: 100%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+}
+.product-image{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.nomeDoProduto{
+    margin-bottom: 10px;
+    color: #3db36b;
+    border-left:5px solid #0f6424;
+    padding-left: 7px;
+    font-size: 25px;
+}
+
+.card p{
+    margin-bottom: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #3db36b;
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #0f6424;
+}
+/*Footer*/
+.rodape{
+    background: linear-gradient(90deg, rgba(58,180,132,1) 0%, rgb(0, 255, 187) 50%, rgba(58,180,132,1) 100%);
+    color: #fff;
+    border-top: 3px solid #0f6424;
+    padding: 80px;
+}
+@media(max-width:1100px){
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:720px){
+    .products-container{
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        width: 75%;
+    }
+}
+@media(max-width:425px){
+    .card {
+        width: 100%;
+    }
+}
