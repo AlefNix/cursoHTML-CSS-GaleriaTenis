@@ -51,7 +51,7 @@ function renderiza() {
 
 function carregarImagens(){
     for(var i= 1; i <= tenis.length; i++){      
-      document.getElementById(`img-${i}`).style.backgroundImage = `url(../assets/tenis${i}.jpg)`
+      document.getElementById(`img-${i}`).style.backgroundImage = `url(https://alefnix.github.io/cursoHTML-CSS-GaleriaTenis/assets/tenis${i}.jpg)`
     } 
   } 
 renderiza();
